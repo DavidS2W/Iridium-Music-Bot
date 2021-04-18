@@ -17,7 +17,10 @@ stop_words = ['Player has been stopped', 'Player stopped', 'I am now stopped fro
 
 colors = [0x1abc9c, 0x11806a, 0x3498db, 0x206694]
 
-
+@bot.command()
+async def test(ctx):
+  await ctx.send('Hello Heroku')
+  
 @bot.event
 async def on_ready():
   print(f'We are now logged in as {bot.user}')
